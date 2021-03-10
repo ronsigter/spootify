@@ -1,0 +1,18 @@
+@import '../../../styles/vars';
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: 2px solid $primary-blue;
+  color: $primary-blue;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 1em 3em;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
