@@ -17,25 +17,25 @@ class Discover extends Component {
   render() {
     const { newReleases, playlists, categories } = this.props
     return (
-      <div className='discover'>
+      <div className="discover">
         <DiscoverBlock
-          text='RELEASED THIS WEEK'
-          id='released'
+          text="RELEASED THIS WEEK"
+          id="released"
           data={newReleases.items}
           isLoading={newReleases.loading}
         />
         <DiscoverBlock
-          text='FEATURED PLAYLISTS'
-          id='featured'
+          text="FEATURED PLAYLISTS"
+          id="featured"
           data={playlists.items}
           isLoading={playlists.loading}
         />
         <DiscoverBlock
-          text='BROWSE'
-          id='browse'
+          text="BROWSE"
+          id="browse"
           data={categories.items}
           isLoading={categories.loading}
-          imagesKey='icons'
+          imagesKey="icons"
         />
       </div>
     )

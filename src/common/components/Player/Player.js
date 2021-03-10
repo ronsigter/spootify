@@ -1,16 +1,16 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faStepForward,
   faPlayCircle,
   faStepBackward,
-  faEllipsisH
-} from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faRandom } from '@fortawesome/free-solid-svg-icons';
-import { faRetweet } from '@fortawesome/free-solid-svg-icons';
-import { faVolumeDown } from '@fortawesome/free-solid-svg-icons';
-import './_player.scss';
+  faEllipsisH,
+} from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faRandom } from '@fortawesome/free-solid-svg-icons'
+import { faRetweet } from '@fortawesome/free-solid-svg-icons'
+import { faVolumeDown } from '@fortawesome/free-solid-svg-icons'
+import './_player.scss'
 
 export default function Player() {
   return (
@@ -33,5 +33,5 @@ export default function Player() {
         <FontAwesomeIcon icon={faVolumeDown} />
       </div>
     </div>
-  );
+  )
 }

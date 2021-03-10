@@ -26,12 +26,12 @@ export default function DiscoverBlock({
   isLoading,
 }) {
   return (
-    <div className='discover-block'>
-      <div className='discover-block__header'>
+    <div className="discover-block">
+      <div className="discover-block__header">
         <h2>{text}</h2>
         <span />
         {data.length ? (
-          <div className='animate__animated animate__fadeIn'>
+          <div className="animate__animated animate__fadeIn">
             <FontAwesomeIcon
               icon={faChevronLeft}
               onClick={scrollContainer(id, { isNegative: true })}
@@ -44,11 +44,11 @@ export default function DiscoverBlock({
         ) : null}
       </div>
       {isLoading ? (
-        <div className='discover-block__row __loading'>
+        <div className="discover-block__row __loading">
           <div>LOADING...</div>
         </div>
       ) : (
-        <div className='discover-block__row' id={id}>
+        <div className="discover-block__row" id={id}>
           {data.map(({ [imagesKey]: images, name }) => (
             <DiscoverItem key={name} images={images} name={name} />
           ))}

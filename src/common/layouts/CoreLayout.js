@@ -17,13 +17,13 @@ function CoreLayout({ children, history }) {
   }, [dispatch])
 
   return (
-    <div className='main'>
+    <div className="main">
       {token ? (
         <>
           <SideBar />
-          <div className='main__content'>
+          <div className="main__content">
             <Header history={history} />
-            <div className='main__content__child'>{children}</div>
+            <div className="main__content__child">{children}</div>
           </div>
           <Player />
         </>
