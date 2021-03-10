@@ -14,7 +14,7 @@ function CoreLayout({ children, history }) {
   useEffect(() => {
     const hashToken = hash.access_token
     if (hashToken) dispatch(setToken(hashToken))
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='main'>
