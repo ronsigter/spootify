@@ -1,4 +1,4 @@
-export const hash = window.location.hash
+const hash = window.location.hash
   .substring(1)
   .split('&')
   .reduce(function (initial, item) {
@@ -8,3 +8,5 @@ export const hash = window.location.hash
     }
     return initial
   }, {})
+
+export default hash
