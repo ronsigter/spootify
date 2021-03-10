@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import DiscoverBlock from './DiscoverBlock/components/DiscoverBlock'
 import '../styles/_discover.scss'
 import { connect } from 'react-redux'
-import fetchNewRelease from '../../../redux/actions/newRelease/fetchNewRelease'
+import fetchNewRelease from '../../../redux/actions/fetchNewRelease'
 
 class Discover extends Component {
   componentWillMount() {
@@ -11,7 +11,6 @@ class Discover extends Component {
 
   render() {
     const { newReleases } = this.props
-    console.log(newReleases)
     return (
       <div className='discover'>
         <DiscoverBlock
