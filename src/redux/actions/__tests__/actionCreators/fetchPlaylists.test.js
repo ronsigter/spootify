@@ -1,7 +1,7 @@
 import * as actions from '../../fetchPlaylists/actions'
 import * as types from '../../types'
 
-describe('actions', () => {
+describe('fetchPlaylists action creator', () => {
   it('should return type of PLAYLISTS_LOADING', () => {
     const expectedAction = {
       type: types.PLAYLISTS_LOADING,

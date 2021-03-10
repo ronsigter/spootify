@@ -1,7 +1,7 @@
 import * as actions from '../../fetchCategories/actions'
 import * as types from '../../types'
 
-describe('actions', () => {
+describe('fetchCategories action creator', () => {
   it('should return type of CATEGORIES_LOADING', () => {
     const expectedAction = {
       type: types.CATEGORIES_LOADING,

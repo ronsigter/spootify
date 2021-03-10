@@ -1,7 +1,7 @@
 import * as actions from '../../fetchNewRelease/actions'
 import * as types from '../../types'
 
-describe('actions', () => {
+describe('fetchNewRelease action creator', () => {
   it('should return type of NEW_RELEASE_LOADING', () => {
     const expectedAction = {
       type: types.NEW_RELEASE_LOADING,
