@@ -53,6 +53,12 @@ $ yarn test
 - [x] Integrate redux into the project and make API calls and access data through redux
 - [x] Add tests
 
+# Future Development
+
+- [ ] Add refresh token feature
+- [ ] Add now playing feature
+- [ ] E2E Testing using Cypress
+
 # Demo 🌄
 
 ![Demo](https://github.com/ronsigter/spootify/blob/main/screenshots/spootify.gif)
