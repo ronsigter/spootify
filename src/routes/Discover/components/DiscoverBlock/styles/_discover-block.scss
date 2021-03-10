@@ -58,6 +58,11 @@
     scroll-behavior: smooth;
     margin-top: 20px;
 
+    &.__loading {
+      align-items: center;
+      justify-content: center;
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }

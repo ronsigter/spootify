@@ -22,16 +22,19 @@ class Discover extends Component {
           text='RELEASED THIS WEEK'
           id='released'
           data={newReleases.items}
+          isLoading={newReleases.loading}
         />
         <DiscoverBlock
           text='FEATURED PLAYLISTS'
           id='featured'
           data={playlists.items}
+          isLoading={playlists.loading}
         />
         <DiscoverBlock
           text='BROWSE'
           id='browse'
           data={categories.items}
+          isLoading={categories.loading}
           imagesKey='icons'
         />
       </div>
