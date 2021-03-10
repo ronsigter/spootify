@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import SideBar from '../components/SideBar'
 import Player from '../components/Player'
 import Login from '../components/Login/Login'
-import { hash } from '../../utils/'
+import { hash } from '../../utils'
+import { useSelector, useDispatch } from 'react-redux'
+import setToken from '../../redux/actions/setToken'
 
 function CoreLayout({ children, history }) {
-  const [token, setToken] = useState(null)
+  const dispatch = useDispatch()
+  const { token } = useSelector((state) => state.auth)
+
   useEffect(() => {
-    const token = hash.access_token
-    if (token) setToken(token)
+    const hashToken = hash.access_token
+    if (hashToken) dispatch(setToken(hashToken))
   }, [])
 
   return (

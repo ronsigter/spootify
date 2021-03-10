@@ -6,10 +6,9 @@ import fetchNewRelease from '../../../redux/actions/fetchNewRelease'
 import fetchPlaylists from '../../../redux/actions/fetchPlaylists'
 import fetchCategories from '../../../redux/actions/fetchCategories'
 
-const token =
-  'BQDVZ3uF4P5AHLJnQOQMxbwHHmnKwD5PlfWEPcaSNdUTOUSLzu-jn4AbPDUdGEAELka8aVpH_t5Uq5IhN9R1AOqYG5CMDYAjLQgDgO6t7y3fZknZi2FupHzwFp7sjbe6w6rTzmXecZGQgA'
 class Discover extends Component {
   componentWillMount() {
+    const { token } = this.props
     this.props.fetchNewRelease(token)
     this.props.fetchPlaylists(token)
     this.props.fetchCategories(token)
@@ -44,6 +43,7 @@ const mapStateToProps = (state) => ({
   newReleases: state.newReleases,
   playlists: state.playlists,
   categories: state.categories,
+  token: state.auth.token,
 })
 
 export default connect(mapStateToProps, {
